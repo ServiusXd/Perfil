@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encuesta</title>
+</head>
+<body>
+	<h1>Encuesta</h1>
+	<form id="formulario1" name="formulario1" method="post" action="operaciones2.php">
+			Nombre:
+			<input type="text" name="nombre" id="nombre"><br><br>
+			Apellido Paterno:
+			<input type="text" name="apellido1" id="apellido1"><br><br>
+			Apellido Materno:
+			<input type="text" name="apellido2" id="apellido2"><br><br>
+			Edad:
+			<input type="text" name="edad" id="edad" size="2" maxlength="2"><br><br>
+			Numero de Cuenta:
+			<input type="text" name="numerocuenta" id="numerocuenta" maxlength="9"><br><br>
+			Sexo: 
+			<input type="radio" name="sexo" id="sexo" value="1">Hombre
+			<input type="radio" name="sexo" id="sexo" value="2">Mujer
+			<input type="radio" name="sexo" id="sexo" value="3">Otro
+			<br><br>
+			¿Estas vacunado?:
+			<input type="radio" name="vacunado" id="vacunado" value="0">Sí
+			<input type="radio" name="vacunado" id="vacunado" value="1">No
+			<br><br>
+			<label for="generacion" class="form-label">Generación:</label>
+			<input list="opciones" id="generacion" placeholder="Revisa mis opciones...">
+			<datalist id="opciones">
+			  	<option value="2023">
+			  	<option value="2022">
+				<option value="2021">
+				<option value="2020">
+				<option value="2019">
+			  	<option value="2018">
+			  	<option value="2017">
+			  	<option value="2016">
+			</datalist><br><br>
+			<label for="generacion" class="form-label">Carrera:</label>
+			<input list="listacarre" id="carrera" placeholder="Revisa mis opciones...">
+			<datalist id="listacarre">
+				<option value="Informatica">
+				<option value="Contabilidad">
+				<option value="Administracion">
+				<option value="Agricola">
+				<option value="Veterinaria">
+				<option value="Ingenieria">
+				<option value="Ingles">
+				<option value="Externo">
+				</datalist><br><br>
+
+			<input type="reset" name="restaure" id="restaure" value="Limpiar formulario">
+			<input type="submit" name="enviar" id="enviar" value="Enviar info">
+	</form>
+</body>
+</html>
